@@ -1,0 +1,110 @@
+
+body {
+    margin: 0 !important;
+    background-image: url(../images/pattern-bg.png);
+}
+
+.container {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+.attribution, .header-title{
+	text-align: center; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header {
+    height: 9rem;
+}
+
+.header-title{
+	font-family: 'Rubik', sans-serif;
+	font-weight: normal;
+	color: white;
+}
+
+#mapid {
+    position: absolute !important;
+    height: 66%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.geo-info {
+    background: white;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+}
+
+.search-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+input[type=text] {
+    padding: 1rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    width: 50%;
+}
+
+.search-container button {
+    padding: 14px 24px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    margin: -4px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: black;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+i.fa.fa-angle-right {
+    color: white;
+}
+
+.info {
+    width: 100%;
+    padding-top: 1%;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    font-weight: bold;
+    border-right: 1px solid hsl(0deg 0% 86%);
+    margin: 2%;
+}
+
+.info-result {
+    color: hsl(0, 0%, 17%);
+    font-size: 18px;
+    padding-top: 7%;
+}
+
+.info.info-isp {
+    border: none;
+}
+
+@media screen and (max-width: 375px) {
+	.geo-info { flex-flow: column; padding-top: 5%; }
+    .info { text-align: center; border: none; padding-bottom: 5%; margin: 0; }
+}
